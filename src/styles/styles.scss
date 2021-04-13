@@ -1,0 +1,25 @@
+$body-color: pink;
+
+body {
+  height: 100vh;
+  width: 100vw;
+  overflow: hidden;
+  background-color: $body-color;
+}
+
+button {
+  background-color: lightblue;
+}
+
+#localMouse {
+  :focus {
+    border: 1px solid lightseagreen;
+  }
+  z-index: 10;
+  display: none;
+  position: absolute;
+
+  svg {
+    transform: translate(-12px, -3px);
+  }
+}

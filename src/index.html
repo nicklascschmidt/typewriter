@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Typewriter</title>
+    <meta name="description" content="Typewriter - having fun with typing" />
+    <meta name="author" content="Nicklas Chen Schmidt" />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css"
+      integrity="sha512-NmLkDIU1C/C88wi324HBc+S2kLhi08PN5GDeUVVVC/BVt/9Izdsc9SVeVfA1UZbY3sHUlDSyRXhCzHfr6hmPPw=="
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bulma@0.9.2/css/bulma.min.css"
+    />
+  </head>
+
+  <body>
+    <section class="section">
+      <div class="container">
+        <div class="block">
+          <h1 class="title">Typewriter</h1>
+          <p class="subtitle">Have some <strong>fun</strong>!</p>
+          <p>
+            Please press <kbd>Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>R</kbd> to
+            re-render an MDN page.
+          </p>
+        </div>
+        <div class="block">
+          <button id='switchToKeyboard' data-toggle='off'>Turn On Keyboard</button>
+          <div id='localMouse' tabindex="-1">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              class="feather feather-crosshair"
+            >
+              <circle cx="12" cy="12" r="10"></circle>
+              <line x1="22" y1="12" x2="18" y2="12"></line>
+              <line x1="6" y1="12" x2="2" y2="12"></line>
+              <line x1="12" y1="6" x2="12" y2="2"></line>
+              <line x1="12" y1="22" x2="12" y2="18"></line>
+            </svg>
+          </div>
+        </div>
+        <div class="block">
+          <textarea id="text-field"></textarea>
+        </div>
+        <div class="block">
+          <div class="select is-primary">
+            <select name="actionColor" id="actionColorDropdown">
+              <option value="lightblue">Blue</option>
+              <option value="lightgreen">Green</option>
+              <option value="lightcoral">Red</option>
+            </select>
+          </div>
+        </div>
+        <div class="block">
+          <div id="keyboard"></div>
+        </div>
+        
+        
+      </div>
+    </section>
+  </body>
+</html>
