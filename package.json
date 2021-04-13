@@ -1,0 +1,23 @@
+{
+  "name": "typewriter",
+  "version": "1.0.0",
+  "repository": "https://github.com/nicklascschmidt/typewriter.git",
+  "author": "Nicklas",
+  "license": "MIT",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "watch": "webpack --watch",
+    "build": "webpack",
+    "start": "webpack serve --open"
+  },
+  "devDependencies": {
+    "css-loader": "^5.2.1",
+    "html-webpack-plugin": "^5.3.1",
+    "sass": "^1.32.8",
+    "sass-loader": "^11.0.1",
+    "style-loader": "^2.0.0",
+    "webpack": "^5.32.0",
+    "webpack-cli": "^4.6.0",
+    "webpack-dev-server": "^3.11.2"
+  }
+}
